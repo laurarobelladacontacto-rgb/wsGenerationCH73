@@ -1,0 +1,54 @@
+1. def main():
+¿Qué hace?: Declara la función principal de nuestro programa.
+
+¿Por qué se usa?: Organiza el código agrupando las instrucciones que ejecutan la lógica principal. En lugar de tener líneas de código sueltas, estructurarlo en funciones hace que el programa sea más limpio, modular y fácil de mantener o probar.
+
+2. cantidad = int(input("¿Cuántas preguntas quieres? "))
+input(...): Muestra el texto entre comillas en la terminal y pausa la ejecución hasta que el usuario escribe algo y presiona Enter.
+
+int(...): Todo lo que el usuario escribe mediante input() entra a Python como un texto (cadena de caracteres o string). Como la API necesita un número real para saber cuántas preguntas devolver, int() convierte esa entrada de texto a un número entero.
+
+cantidad =: Almacena ese número en una variable llamada cantidad para usarlo en la siguiente línea.
+
+3. trivia = trivia_fetch(cantidad)
+trivia_fetch(cantidad): Llama a la función que creamos en el Paso 2 y le pasa como argumento el número que guardamos en cantidad.
+
+trivia =: Recibe el resultado (los datos en formato JSON que regresa trivia_fetch) y lo guarda en la variable trivia.
+
+4. print(trivia)
+¿Qué hace?: Muestra en la pantalla de la terminal el contenido de la variable trivia.
+
+¿Por qué se usa?: Nos sirve para verificar que la petición a la API funcionó correctamente y que ya tenemos los datos en nuestro programa.
+
+5. if __name__ == "__main__":
+__name__: Es una variable especial que Python asigna automáticamente a cada archivo.
+
+"__main__": Si ejecutas el archivo directamente desde la terminal (con python main.py), Python le asigna a __name__ el valor de "__main__".
+
+¿Por qué se usa?: Es una condición de seguridad estándar en Python. Le dice al intérprete: "Solo ejecuta la función main() si este archivo se está corriendo de forma directa, no si otro archivo lo está importando como librería".
+
+6. main()
+¿Qué hace?: Llama o invoca a la función main() para que empiece a correr todo el flujo que explicamos arriba.
+
+==================================================
+EXPLICACIÓN DEL CÓDIGO MAIN.PY - QUIZZ TRIVIA
+==================================================
+
+1. def main():
+   Define la función principal del programa para organizar la lógica en un bloque estructurado.
+
+2. cantidad = int(input("¿Cuántas preguntas quieres? "))
+   - input(): Pide datos al usuario desde la terminal.
+   - int(): Convierte la entrada de texto en un número entero.
+
+3. trivia = trivia_fetch(cantidad)
+   Llama a la función 'trivia_fetch' pasándole la cantidad seleccionada y guarda los datos devueltos en la variable 'trivia'.
+
+4. print(trivia)
+   Imprime en la consola el contenido recibido de la API para verificar la respuesta.
+
+5. if __name__ == "__main__":
+   Asegura que la función main() solo se ejecute cuando el archivo sea corrido directamente desde la terminal.
+
+6. main()
+   Ejecuta la función principal para iniciar el programa.
