@@ -6,12 +6,17 @@
 
 import requests
 
+import requests
+
 def trivia_fetch(num):
-    url = f"https://opentdb.com/api.php?amount={num}"
+    url = f"https://numbersapi.com/{num}?json"
     response = requests.get(url)
-    
     trivia = response.json()
     return trivia
+
+
+    #https://opentdb.com/api.php?amount={num}
+
 
 def main():
     cantidad = int(input("¿Cuántas preguntas quieres? "))
