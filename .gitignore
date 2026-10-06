@@ -7,3 +7,6 @@ __pycache__/
 
 # Configuración del editor VS Code
 .vscode/
+
+.venv/
+node_modules/
