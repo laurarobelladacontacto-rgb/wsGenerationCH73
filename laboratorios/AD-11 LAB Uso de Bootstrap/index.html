@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Laboratorio 11 Bootstrap</title>
+
+  <!-- enlace a Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+  <!-- enlace a la hoja de estilos -->
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  <!--contenedor principal-->
+  <div class="container-fluid py-4">
+    <!--tres botones-->
+    <section class="seccion-componente">
+      <h1>Botones</h1>
+      <button class="btn-solid btn-styled theme-primary">Primary</button>
+      <button class="btn-solid btn-styled theme-accent">Accent</button>
+      <button class="btn-solid btn-styled theme-success">Success</button>
+    </section>
+
+    <!--texto-->
+    <section class="seccion-componente">
+      <h2>Alineación de Texto</h2>
+      <p class="text-start">Izquierda</p>
+
+      <!-- Usamos una clase personalizada para el rojo -->
+      <p class="text-center texto-rojo">Centro</p>
+      <p class="text-end">Derecha</p>
+    </section>
+
+    <!-- Tarjeta con encabezado, imagen y grupo de lista -->
+    <section class="seccion-componente">
+      <h2>Tarjeta de Frutas</h2>
+
+      <!-- Contenedor principal de la tarjeta -->
+      <div class="card mi-tarjeta">
+
+        <!-- 1.  "Hoja de ruta" -->
+        <div class="card-header">
+          Hoja de ruta
+        </div>
+
+        <!-- 2. Imagen de una cesta de fruta  -->
+        <img src="https://images.unsplash.com/photo-1610832958506-aa56368176cf?w=400" class="card-img-top"
+          alt="Cesta de fruta">
+
+        <!-- 3.  lista con tres frutas -->
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Manzana</li>
+          <li class="list-group-item">Plátano</li>
+          <li class="list-group-item">Naranja</li>
+        </ul>
+
+      </div>
+    </section>
+  </div>
+
+
+
+
+  <script src="script.js"></script>
+
+  <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

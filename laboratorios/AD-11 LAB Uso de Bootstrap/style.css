@@ -1,0 +1,35 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #8b6785;
+}
+
+
+
+
+/* Estilo para poner el texto en rojo */
+.texto-rojo {
+    color: rgb(175, 32, 32); 
+    font-size: 30px;
+    
+}
+
+.mi-tarjeta .card-img-top {
+    width: 200px;      /* Ancho fijo */
+    height: 100px;     /* Alto fijo */
+    object-fit: cover; /* Mantiene la proporción y evita deformaciones */
+    display: block;
+    margin: 0 auto;    /* Centra la imagen  */
+}
+
+/* Estilo  para la tarjeta */
+.mi-tarjeta {
+    max-width: 400px; /* Ancho máximo para que no se estire demasiado */
+    width: 100%;      /* Se adapta si la pantalla es más chica */
+    margin: 0 auto;   /* Centra la tarjeta automáticamente en la pantalla */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
