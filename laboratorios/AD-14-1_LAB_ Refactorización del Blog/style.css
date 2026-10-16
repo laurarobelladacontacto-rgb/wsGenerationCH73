@@ -1,0 +1,22 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: "Orbitron", sans-serif;
+}
+
+:root {
+  --color-morado: #8a2be2;
+}
+
+.columna-lateral {
+  border: 1px solid var(--color-morado);
+  border-radius: 8px;
+  min-height: 100px;
+}

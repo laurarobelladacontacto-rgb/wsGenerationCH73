@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark"> <!--tema oscuro -->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>PixelForge</title>
+  <!--CDN BOOTSTRAP 5.3-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body class="bg-black text-white d-flex flex-column min-vh-100"><!--tema oscuro y texto blanco -->
+
+  <!--Título-->
+
+  <header class="text-center py-4">
+    <h1 class="display-4 fw-bold text-info">PixelForge</h1>
+  </header>
+  <!--Barra de navegación-->
+  <nav class="navbar navbar-expand-lg bg-dark">
+    <div class="container-fluid flex-grow-1">
+      <a class="navbar-brand text-info" href="index.html">PixelForge</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+        aria-controls="menuPrincipal" aria-expanded="false" aria-label="Mostrar menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="menuPrincipal">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">Quiénes somos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--Rejilla 3 columnas-->
+  <div class="container-fluid">
+    <div class="row">
+
+      <aside class="col-12 col-md-2 columna-lateral"></aside>
+      <!-- Espacio para publicidad  -->
+
+
+      <main class="col-12 col-md-8 p-4">
+        <h2 class="text-info">Arma el equipo que tu creatividad merece</h2>
+        <p class="lead">
+          En PixelForge te ayudamos a armar tu computadora ideal para diseñar,
+          ilustrar, editar video y crear en 3D.
+        </p>
+        <p>
+          Seleccionamos piezas de hardware pensadas para creativos: tarjetas gráficas,
+          procesadores, memoria RAM y almacenamiento rápido.
+        </p>
+        <h3 class="text-info mt-4">Piezas destacadas</h3>
+        <ul>
+          <li>Tarjetas gráficas para renderizado y edición</li>
+          <li>Procesadores con muchos núcleos</li>
+          <li>Memoria RAM de alto rendimiento</li>
+          <li>Almacenamiento SSD ultrarrápido</li>
+        </ul>
+        <div class="text-center">
+          <img src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7?w=800"
+            class="img-fluid   rounded mt-4 w-50" alt="Computadora armada con componentes de hardware">
+        </div>
+      </main>
+
+      <aside class="col-12 col-md-2 border border-secondary">
+        <!-- Espacio  para noticias  -->
+      </aside>
+
+    </div>
+  </div>
+
+  <footer class="bg-dark text-center py-3">
+    <p class="mb-0">PixelForge © 2026 </p>
+    <p class="mb-0">Creado por: Laura RL | contacto@pixelforge.com</p>
+  </footer>
+
+
+
+  <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
